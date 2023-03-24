@@ -1,0 +1,10 @@
+C:\Users\Amir\source\repos\View\Models2\bin\Release\netstandard2.0\Models2.deps.json
+C:\Users\Amir\source\repos\View\Models2\bin\Release\netstandard2.0\Models2.dll
+C:\Users\Amir\source\repos\View\Models2\bin\Release\netstandard2.0\Models2.pdb
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.csproj.AssemblyReference.cache
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.AssemblyInfoInputs.cache
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.AssemblyInfo.cs
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.csproj.CoreCompileInputs.cache
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.dll
+C:\Users\Amir\source\repos\View\Models2\obj\Release\netstandard2.0\Models2.pdb

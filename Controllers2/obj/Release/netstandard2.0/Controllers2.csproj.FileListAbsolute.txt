@@ -1,0 +1,13 @@
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.csproj.AssemblyReference.cache
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.AssemblyInfoInputs.cache
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.AssemblyInfo.cs
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.csproj.CoreCompileInputs.cache
+C:\Users\Amir\source\repos\View\Controllers2\bin\Release\netstandard2.0\Controllers2.deps.json
+C:\Users\Amir\source\repos\View\Controllers2\bin\Release\netstandard2.0\Controllers2.dll
+C:\Users\Amir\source\repos\View\Controllers2\bin\Release\netstandard2.0\Controllers2.pdb
+C:\Users\Amir\source\repos\View\Controllers2\bin\Release\netstandard2.0\Models2.dll
+C:\Users\Amir\source\repos\View\Controllers2\bin\Release\netstandard2.0\Models2.pdb
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.csproj.CopyComplete
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.dll
+C:\Users\Amir\source\repos\View\Controllers2\obj\Release\netstandard2.0\Controllers2.pdb

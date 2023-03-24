@@ -1,0 +1,17 @@
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\Controllers2.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\Models2.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\Controllers2.pdb
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Debug\Models2.pdb
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\Vue.csproj.AssemblyReference.cache
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\Vue.csproj.SuggestedBindingRedirects.cache
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Authentication.resources
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\Vue.csproj.GenerateResource.cache
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\Vue.csproj.CoreCompileInputs.cache
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\Vue.csproj.CopyComplete
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
