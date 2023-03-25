@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Controllers2
 {
-    internal class EmpruntADO
+    public class EmpruntADO
     {
         public List<Emprunt> Load_emprunts()
         {
@@ -35,6 +35,29 @@ namespace Controllers2
             return emprunts;
 
 
+
+        }
+
+        public bool Add_Emprunt(Emprunt emprunt)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
+
+            string query = "INSERT INTO Emprunt (id_etudiant,id_livre,date_emprunt,date_retour) VALUES (@id_etudiant, @id_livre, @date_emprunt,@date_retour)";
+            SqlCommand command = new SqlCommand(query, conn);
+            conn.Open();
+
+            command.Parameters.AddWithValue("@id_etudiant", emprunt.Id_etudiant);
+            command.Parameters.AddWithValue("@id_livre", emprunt.Id_livre);
+            command.Parameters.AddWithValue("@date_emprunt", emprunt.Date_emprunt);
+            command.Parameters.AddWithValue("@date_retour", emprunt.Date_retour);
+
+            // Execute request
+            int rowsAffected = command.ExecuteNonQuery();
+
+            if (rowsAffected > 0)
+                return true;
+            else
+                return false;
 
         }
     }

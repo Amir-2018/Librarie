@@ -60,6 +60,7 @@
             this.empruntDataGridView.RowTemplate.Height = 24;
             this.empruntDataGridView.Size = new System.Drawing.Size(680, 398);
             this.empruntDataGridView.TabIndex = 1;
+            this.empruntDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.empruntDataGridView_CellContentClick);
             // 
             // button3
             // 

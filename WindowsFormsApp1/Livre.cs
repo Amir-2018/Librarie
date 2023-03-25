@@ -30,15 +30,8 @@ namespace WindowsFormsApp1
 
         }
 
-        private void date_editionLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Livre_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void date_editionLabel_Click(object sender, EventArgs e){}
+        private void Livre_Load(object sender, EventArgs e) {}
 
         private void button2_Click(object sender, EventArgs e)
         {

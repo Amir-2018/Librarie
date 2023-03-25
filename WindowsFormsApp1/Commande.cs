@@ -69,5 +69,23 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            /*EmpruntADO em = new EmpruntADO();
+            Models2.Emprunt currentEmprunt = empruntBindingSource.Current as Models2.Etudiant;
+
+            if (currentEtudiant != null && etud.Add_Etudiant(currentEtudiant))
+            {
+                List<Models2.Etudiant> etudiants = etud.Load_etudiants();
+                BindingList<Models2.Etudiant> bindingEtudiants = new BindingList<Models2.Etudiant>(etudiants);
+                etudiantBindingSource.DataSource = bindingEtudiants;
+                MessageBox.Show("Operation succeeded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Operation failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }*/
+        }
     }
 }

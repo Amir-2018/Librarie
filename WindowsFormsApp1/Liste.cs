@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Models2; 
 
 namespace WindowsFormsApp1
 {
@@ -16,13 +17,18 @@ namespace WindowsFormsApp1
         public Liste()
         {
             InitializeComponent();
-            LivreADO lv = new LivreADO();
-            List<Models2.Livre> livres = lv.Load_livres();
-            BindingList<Models2.Livre> bindingLivre = new BindingList<Models2.Livre>(livres);
-            livreBindingSource.DataSource = bindingLivre;
+            EmpruntADO em = new EmpruntADO();
+            List<Models2.Emprunt> emprunts = em.Load_emprunts();
+            BindingList<Models2.Emprunt> bindingEmprunt = new BindingList<Models2.Emprunt>(emprunts);
+            empruntBindingSource.DataSource = bindingEmprunt;
         }
 
         private void Liste_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void empruntDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
