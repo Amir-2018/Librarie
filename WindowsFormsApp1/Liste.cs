@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controllers2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace WindowsFormsApp1
         public Liste()
         {
             InitializeComponent();
+            LivreADO lv = new LivreADO();
+            List<Models2.Livre> livres = lv.Load_livres();
+            BindingList<Models2.Livre> bindingLivre = new BindingList<Models2.Livre>(livres);
+            livreBindingSource.DataSource = bindingLivre;
+        }
+
+        private void Liste_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

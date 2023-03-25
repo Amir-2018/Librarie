@@ -8,21 +8,21 @@ namespace Controllers2
 {
     public class LivreADO
     {
-        public bool Add_Etudiant(Etudiant etudiant)
+        public bool Add_Livre(Livre livre)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
 
-            string query = "INSERT INTO Etudiant (nom, prenom, email,telephone,filiere,groupe,code_inscription) VALUES (@nom, @prenom, @email,@telephone,@filiere,@groupe,@code_inscription )";
+            string query = "INSERT INTO Livre (titre, auteur, nbpages,nbchapitre,date_edition,prix,category) VALUES (@titre, @auteur, @nbpages,@nbchapitre,@date_edition,@prix,@category)";
             SqlCommand command = new SqlCommand(query, conn);
             conn.Open();
 
-            command.Parameters.AddWithValue("@nom", etudiant.Nom);
-            command.Parameters.AddWithValue("@prenom", etudiant.Prenom);
-            command.Parameters.AddWithValue("@email", etudiant.Email);
-            command.Parameters.AddWithValue("@telephone", etudiant.Telephone);
-            command.Parameters.AddWithValue("@filiere", etudiant.Filiere);
-            command.Parameters.AddWithValue("@groupe", etudiant.Groupe);
-            command.Parameters.AddWithValue("@code_inscription", etudiant.Code_inscription);
+            command.Parameters.AddWithValue("@titre", livre.Titre);
+            command.Parameters.AddWithValue("@auteur", livre.Auteur);
+            command.Parameters.AddWithValue("@nbpages", livre.Nbpages);
+            command.Parameters.AddWithValue("@nbchapitre", livre.Nbchapitre);
+            command.Parameters.AddWithValue("@date_edition", livre.Date_edition);
+            command.Parameters.AddWithValue("@prix", livre.Prix);
+            command.Parameters.AddWithValue("@category", livre.Category);
             // Execute request
             int rowsAffected = command.ExecuteNonQuery();
 
@@ -66,11 +66,11 @@ namespace Controllers2
 
         }
 
-        public bool delete_livret(int id)
+        public bool delete_livre(int id)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
             conn.Open();
-            string query = "Delete from Etudiant where id_etudiant = @id";
+            string query = "Delete from Livre where id_livre = @id";
             SqlCommand command = new SqlCommand(query, conn);
             command.Parameters.AddWithValue("@id", id);
             int rowAffected = command.ExecuteNonQuery();
@@ -81,21 +81,20 @@ namespace Controllers2
 
         }
 
-        public bool update_livre(Etudiant etudiant)
+        public bool update_livre(Livre livre)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
             conn.Open();
-            string query = "Update Etudiant SET nom = @nom,prenom = @prenom,email = @email,telephone = @telephone,filiere = @filiere,groupe = @groupe,code_inscription = @code_inscription where id_etudiant = @id";
+            string query = "Update Livre SET titre = @titre,auteur = @auteur,nbpages = @nbpages,nbchapitre = @nbchapitre,prix = @prix,category = @category where id_livre = @id";
             SqlCommand command = new SqlCommand(query, conn);
 
-            command.Parameters.AddWithValue("@nom", etudiant.Nom);
-            command.Parameters.AddWithValue("@prenom", etudiant.Prenom);
-            command.Parameters.AddWithValue("@email", etudiant.Email);
-            command.Parameters.AddWithValue("@telephone", etudiant.Telephone);
-            command.Parameters.AddWithValue("@filiere", etudiant.Filiere);
-            command.Parameters.AddWithValue("@groupe", etudiant.Groupe);
-            command.Parameters.AddWithValue("@code_inscription", etudiant.Code_inscription);
-            command.Parameters.AddWithValue("@id", etudiant.Id_etudiant);
+            command.Parameters.AddWithValue("@titre", livre.Titre);
+            command.Parameters.AddWithValue("@auteur", livre.Auteur);
+            command.Parameters.AddWithValue("@nbpages", livre.Nbpages);
+            command.Parameters.AddWithValue("@nbchapitre", livre.Nbchapitre);
+            command.Parameters.AddWithValue("@prix", livre.Prix);
+            command.Parameters.AddWithValue("@category", livre.Category);
+            command.Parameters.AddWithValue("@id", livre.Id_livre);
 
             // command.Parameters.AddWithValue("@id", etudiant.);
 

@@ -263,6 +263,7 @@
             this.button4.TabIndex = 38;
             this.button4.Text = "Mis à jour";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -278,6 +279,7 @@
             this.button3.TabIndex = 37;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -293,6 +295,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "Ajouter";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -460,6 +463,7 @@
             // livreBindingSource
             // 
             this.livreBindingSource.DataSource = typeof(Models2.Livre);
+            this.livreBindingSource.CurrentChanged += new System.EventHandler(this.livreBindingSource_CurrentChanged);
             // 
             // etudiantBindingSource
             // 
