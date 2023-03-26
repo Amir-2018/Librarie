@@ -37,6 +37,7 @@
             System.Windows.Forms.Label telephoneLabel;
             System.Windows.Forms.Label groupeLabel;
             this.code_inscriptionTextBox = new System.Windows.Forms.TextBox();
+            this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.filiereTextBox = new System.Windows.Forms.TextBox();
             this.nomTextBox = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             code_inscriptionLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             filiereLabel = new System.Windows.Forms.Label();
@@ -63,16 +63,19 @@
             prenomLabel = new System.Windows.Forms.Label();
             telephoneLabel = new System.Windows.Forms.Label();
             groupeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // code_inscriptionLabel
             // 
             code_inscriptionLabel.AutoSize = true;
+            code_inscriptionLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            code_inscriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            code_inscriptionLabel.ForeColor = System.Drawing.Color.White;
             code_inscriptionLabel.Location = new System.Drawing.Point(74, 325);
             code_inscriptionLabel.Name = "code_inscriptionLabel";
-            code_inscriptionLabel.Size = new System.Drawing.Size(106, 16);
+            code_inscriptionLabel.Size = new System.Drawing.Size(123, 16);
             code_inscriptionLabel.TabIndex = 2;
             code_inscriptionLabel.Text = "Code inscription:";
             code_inscriptionLabel.Click += new System.EventHandler(this.code_inscriptionLabel_Click);
@@ -80,47 +83,74 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
+            emailLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            emailLabel.ForeColor = System.Drawing.Color.White;
             emailLabel.Location = new System.Drawing.Point(73, 135);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(44, 16);
+            emailLabel.Size = new System.Drawing.Size(50, 16);
             emailLabel.TabIndex = 3;
             emailLabel.Text = "Email:";
             // 
             // filiereLabel
             // 
             filiereLabel.AutoSize = true;
+            filiereLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            filiereLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            filiereLabel.ForeColor = System.Drawing.Color.White;
             filiereLabel.Location = new System.Drawing.Point(72, 261);
             filiereLabel.Name = "filiereLabel";
-            filiereLabel.Size = new System.Drawing.Size(47, 16);
+            filiereLabel.Size = new System.Drawing.Size(55, 16);
             filiereLabel.TabIndex = 5;
             filiereLabel.Text = "Filiere:";
             // 
             // nomLabel
             // 
             nomLabel.AutoSize = true;
+            nomLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            nomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nomLabel.ForeColor = System.Drawing.Color.White;
             nomLabel.Location = new System.Drawing.Point(70, 9);
             nomLabel.Name = "nomLabel";
-            nomLabel.Size = new System.Drawing.Size(39, 16);
+            nomLabel.Size = new System.Drawing.Size(43, 16);
             nomLabel.TabIndex = 9;
             nomLabel.Text = "Nom:";
             // 
             // prenomLabel
             // 
             prenomLabel.AutoSize = true;
+            prenomLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            prenomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            prenomLabel.ForeColor = System.Drawing.Color.White;
             prenomLabel.Location = new System.Drawing.Point(71, 72);
             prenomLabel.Name = "prenomLabel";
-            prenomLabel.Size = new System.Drawing.Size(57, 16);
+            prenomLabel.Size = new System.Drawing.Size(64, 16);
             prenomLabel.TabIndex = 11;
             prenomLabel.Text = "Prenom:";
             // 
             // telephoneLabel
             // 
             telephoneLabel.AutoSize = true;
+            telephoneLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            telephoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            telephoneLabel.ForeColor = System.Drawing.Color.White;
             telephoneLabel.Location = new System.Drawing.Point(70, 197);
             telephoneLabel.Name = "telephoneLabel";
-            telephoneLabel.Size = new System.Drawing.Size(76, 16);
+            telephoneLabel.Size = new System.Drawing.Size(86, 16);
             telephoneLabel.TabIndex = 13;
             telephoneLabel.Text = "Telephone:";
+            // 
+            // groupeLabel
+            // 
+            groupeLabel.AutoSize = true;
+            groupeLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            groupeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            groupeLabel.ForeColor = System.Drawing.Color.White;
+            groupeLabel.Location = new System.Drawing.Point(74, 389);
+            groupeLabel.Name = "groupeLabel";
+            groupeLabel.Size = new System.Drawing.Size(62, 16);
+            groupeLabel.TabIndex = 18;
+            groupeLabel.Text = "Groupe:";
             // 
             // code_inscriptionTextBox
             // 
@@ -131,6 +161,10 @@
             this.code_inscriptionTextBox.Size = new System.Drawing.Size(209, 42);
             this.code_inscriptionTextBox.TabIndex = 3;
             this.code_inscriptionTextBox.TextChanged += new System.EventHandler(this.code_inscriptionTextBox_TextChanged);
+            // 
+            // etudiantBindingSource
+            // 
+            this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
             // 
             // emailTextBox
             // 
@@ -224,15 +258,6 @@
             this.button4.Text = "Mis à jour";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // groupeLabel
-            // 
-            groupeLabel.AutoSize = true;
-            groupeLabel.Location = new System.Drawing.Point(74, 389);
-            groupeLabel.Name = "groupeLabel";
-            groupeLabel.Size = new System.Drawing.Size(55, 16);
-            groupeLabel.TabIndex = 18;
-            groupeLabel.Text = "Groupe:";
             // 
             // groupeTextBox
             // 
@@ -328,15 +353,12 @@
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 125;
             // 
-            // etudiantBindingSource
-            // 
-            this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
-            // 
             // Etudiant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.istockphoto_543350202_612x6121;
             this.ClientSize = new System.Drawing.Size(1248, 871);
             this.Controls.Add(this.etudiantDataGridView);
             this.Controls.Add(groupeLabel);
@@ -360,8 +382,8 @@
             this.Name = "Etudiant";
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Client_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

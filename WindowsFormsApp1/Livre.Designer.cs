@@ -45,11 +45,13 @@
             System.Windows.Forms.Label categoryLabel;
             this.button1 = new System.Windows.Forms.Button();
             this.prenomTextBox = new System.Windows.Forms.TextBox();
+            this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomTextBox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.titreTextBox = new System.Windows.Forms.TextBox();
+            this.livreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.auteurTextBox = new System.Windows.Forms.TextBox();
             this.nbpagesTextBox = new System.Windows.Forms.TextBox();
             this.nbchapitreTextBox = new System.Windows.Forms.TextBox();
@@ -57,7 +59,6 @@
             this.prixTextBox = new System.Windows.Forms.TextBox();
             this.categoryTextBox = new System.Windows.Forms.TextBox();
             this.livreDataGridView = new System.Windows.Forms.DataGridView();
-            this.etudiant_GroupeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,8 +67,7 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.livreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.etudiant_GroupeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             telephoneLabel = new System.Windows.Forms.Label();
             prenomLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
@@ -82,10 +82,10 @@
             date_editionLabel = new System.Windows.Forms.Label();
             prixLabel = new System.Windows.Forms.Label();
             categoryLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.etudiant_GroupeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // telephoneLabel
@@ -239,6 +239,10 @@
             this.prenomTextBox.Size = new System.Drawing.Size(209, 42);
             this.prenomTextBox.TabIndex = 31;
             // 
+            // etudiantBindingSource
+            // 
+            this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
+            // 
             // nomTextBox
             // 
             this.nomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.etudiantBindingSource, "Nom", true));
@@ -304,6 +308,11 @@
             this.titreTextBox.Name = "titreTextBox";
             this.titreTextBox.Size = new System.Drawing.Size(209, 42);
             this.titreTextBox.TabIndex = 39;
+            // 
+            // livreBindingSource
+            // 
+            this.livreBindingSource.DataSource = typeof(Models2.Livre);
+            this.livreBindingSource.CurrentChanged += new System.EventHandler(this.livreBindingSource_CurrentChanged);
             // 
             // auteurTextBox
             // 
@@ -444,20 +453,12 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
-            // livreBindingSource
-            // 
-            this.livreBindingSource.DataSource = typeof(Models2.Livre);
-            this.livreBindingSource.CurrentChanged += new System.EventHandler(this.livreBindingSource_CurrentChanged);
-            // 
-            // etudiantBindingSource
-            // 
-            this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
-            // 
             // Livre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.istockphoto_543350202_612x612;
             this.ClientSize = new System.Drawing.Size(1248, 803);
             this.Controls.Add(this.livreDataGridView);
             this.Controls.Add(categoryLabel);
@@ -491,10 +492,10 @@
             this.Name = "Livre";
             this.Text = "Livre";
             this.Load += new System.EventHandler(this.Livre_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.etudiant_GroupeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

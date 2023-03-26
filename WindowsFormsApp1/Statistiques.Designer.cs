@@ -153,6 +153,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.istockphoto_543350202_612x612;
             this.ClientSize = new System.Drawing.Size(1248, 803);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

@@ -33,35 +33,17 @@
             System.Windows.Forms.Label emailLabel;
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.password = new System.Windows.Forms.TextBox();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.email = new System.Windows.Forms.TextBox();
             passwordLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(634, 309);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(70, 16);
-            passwordLabel.TabIndex = 17;
-            passwordLabel.Text = "Password:";
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(634, 251);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(44, 16);
-            emailLabel.TabIndex = 15;
-            emailLabel.Text = "Email:";
             // 
             // panel1
             // 
@@ -85,13 +67,11 @@
             this.label1.Text = "Authentication";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // adminBindingSource
-            // 
-            this.adminBindingSource.DataSource = typeof(Models2.Admin);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.panel2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.istockphoto_543350202_612x612;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(passwordLabel);
             this.panel2.Controls.Add(this.password);
@@ -118,6 +98,15 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(634, 309);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(70, 16);
+            passwordLabel.TabIndex = 17;
+            passwordLabel.Text = "Password:";
+            // 
             // password
             // 
             this.password.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.adminBindingSource, "Password", true));
@@ -126,6 +115,19 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(194, 31);
             this.password.TabIndex = 18;
+            // 
+            // adminBindingSource
+            // 
+            this.adminBindingSource.DataSource = typeof(Models2.Admin);
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(634, 251);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(44, 16);
+            emailLabel.TabIndex = 15;
+            emailLabel.Text = "Email:";
             // 
             // email
             // 
@@ -149,9 +151,9 @@
             this.Load += new System.EventHandler(this.Authentication_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
