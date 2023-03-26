@@ -40,6 +40,7 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empruntBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).BeginInit();
@@ -49,6 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -183,6 +185,15 @@
             // 
             this.empruntBindingSource.DataSource = typeof(Models2.Emprunt);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.ebook_cover;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(59, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 65);
+            this.panel3.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,6 +229,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.BindingSource empruntBindingSource;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
