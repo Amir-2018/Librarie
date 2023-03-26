@@ -45,6 +45,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0.6, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

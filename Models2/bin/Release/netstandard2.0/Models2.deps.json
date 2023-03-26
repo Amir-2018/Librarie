@@ -9,11 +9,32 @@
     ".NETStandard,Version=v2.0/": {
       "Models2/1.0.0": {
         "dependencies": {
+          "HtmlRenderer.PdfSharp": "1.5.0.6",
           "NETStandard.Library": "2.0.3",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
           "Models2.dll": {}
+        }
+      },
+      "HtmlRenderer.Core/1.5.0.5": {
+        "runtime": {
+          "lib/net45/HtmlRenderer.dll": {
+            "assemblyVersion": "1.5.0.5",
+            "fileVersion": "1.5.0.5"
+          }
+        }
+      },
+      "HtmlRenderer.PdfSharp/1.5.0.6": {
+        "dependencies": {
+          "HtmlRenderer.Core": "1.5.0.5",
+          "PDFsharp": "1.32.3057"
+        },
+        "runtime": {
+          "lib/net45/HtmlRenderer.PdfSharp.dll": {
+            "assemblyVersion": "1.5.0.6",
+            "fileVersion": "1.5.0.6"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -34,6 +55,26 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "PDFsharp/1.32.3057": {
+        "runtime": {
+          "lib/net20/PdfSharp.Charting.dll": {
+            "assemblyVersion": "1.32.3057.0",
+            "fileVersion": "1.32.3057.0"
+          },
+          "lib/net20/PdfSharp.dll": {
+            "assemblyVersion": "1.32.3057.0",
+            "fileVersion": "1.32.3057.0"
+          }
+        },
+        "resources": {
+          "lib/net20/de/PdfSharp.Charting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.resources.dll": {
+            "locale": "de"
+          }
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -149,6 +190,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "HtmlRenderer.Core/1.5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QfZkSOb8HomRkKW3EAjT/VT48x6q+bgK4IBA9gFF+5FVTbvmMEIm42NsXEx/LTBHMssnQTPe94X0Bi8KdUIVQA==",
+      "path": "htmlrenderer.core/1.5.0.5",
+      "hashPath": "htmlrenderer.core.1.5.0.5.nupkg.sha512"
+    },
+    "HtmlRenderer.PdfSharp/1.5.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uk2lzFa/0zQSk8im2CX8ROXlqy8YAJUG28b5/G8wa0YNdO6+04bEl3iZCaThkcyNWnnIsHCn5hWR3vZjc6JhmA==",
+      "path": "htmlrenderer.pdfsharp/1.5.0.6",
+      "hashPath": "htmlrenderer.pdfsharp.1.5.0.6.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -169,6 +224,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "PDFsharp/1.32.3057": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M8w6e4R+jA1j3ddPCY6jNnb8RG21ZgCr+ENapwaH5NPzNl600f1wOcCPY2hEO+jb0aCGjcMHrWk/K+PC1cw0PQ==",
+      "path": "pdfsharp/1.32.3057",
+      "hashPath": "pdfsharp.1.32.3057.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

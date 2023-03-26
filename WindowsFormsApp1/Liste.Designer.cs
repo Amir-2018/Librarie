@@ -37,6 +37,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empruntBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.empruntDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empruntBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -120,12 +121,29 @@
             // 
             this.empruntBindingSource.DataSource = typeof(Models2.Emprunt);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(296, 489);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 40);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Imprimer";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Liste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1248, 803);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.empruntDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -148,5 +166,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }

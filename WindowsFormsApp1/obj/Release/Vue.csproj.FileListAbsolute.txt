@@ -23,3 +23,13 @@ C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Release\WindowsFormsApp1.St
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Description.resources
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Liste.resources
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Etudiant.resources
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\HtmlRenderer.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\HtmlRenderer.PdfSharp.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.Charting.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\HtmlRenderer.pdb
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\HtmlRenderer.PdfSharp.pdb
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.xml
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.Charting.xml
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\de\PdfSharp.resources.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\de\PdfSharp.Charting.resources.dll
