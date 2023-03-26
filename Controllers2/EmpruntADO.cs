@@ -22,8 +22,8 @@ namespace Controllers2
                 int id_emprunt = int.Parse(reader["id_emprunt"].ToString());
                 int id_etudiant = int.Parse(reader["id_etudiant"].ToString());
                 int id_livre = int.Parse(reader["id_livre"].ToString());
-                DateTime date_emprunt = DateTime.Parse(reader["date_emprunt"].ToString());
-                DateTime date_retour = DateTime.Parse(reader["date_retour"].ToString());
+                string date_emprunt =reader["date_emprunt"].ToString();
+                string date_retour = reader["date_retour"].ToString();
 
 
                 Emprunt empruntObject = new Emprunt(id_emprunt, id_etudiant, id_livre, date_emprunt, date_retour);
@@ -41,11 +41,10 @@ namespace Controllers2
         public bool Add_Emprunt(Emprunt emprunt)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
-
-            string query = "INSERT INTO Emprunt (id_etudiant,id_livre,date_emprunt,date_retour) VALUES (@id_etudiant, @id_livre, @date_emprunt,@date_retour)";
+            string query = "INSERT INTO Emprunts (id_emprunt,id_etudiant,id_livre,date_emprunt,date_retour) VALUES (@id_emprunt,@id_etudiant, @id_livre, @date_emprunt,@date_retour)";
             SqlCommand command = new SqlCommand(query, conn);
             conn.Open();
-
+            command.Parameters.AddWithValue("@id_emprunt", emprunt.Id_emprunt);
             command.Parameters.AddWithValue("@id_etudiant", emprunt.Id_etudiant);
             command.Parameters.AddWithValue("@id_livre", emprunt.Id_livre);
             command.Parameters.AddWithValue("@date_emprunt", emprunt.Date_emprunt);

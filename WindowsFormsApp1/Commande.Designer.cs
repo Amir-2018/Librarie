@@ -56,6 +56,7 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).BeginInit();
@@ -89,7 +90,7 @@
             this.etudiantDataGridView.Name = "etudiantDataGridView";
             this.etudiantDataGridView.RowHeadersWidth = 51;
             this.etudiantDataGridView.RowTemplate.Height = 24;
-            this.etudiantDataGridView.Size = new System.Drawing.Size(1055, 220);
+            this.etudiantDataGridView.Size = new System.Drawing.Size(804, 220);
             this.etudiantDataGridView.TabIndex = 2;
             // 
             // livreDataGridView
@@ -106,11 +107,11 @@
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
             this.livreDataGridView.DataSource = this.livreBindingSource;
-            this.livreDataGridView.Location = new System.Drawing.Point(70, 465);
+            this.livreDataGridView.Location = new System.Drawing.Point(70, 446);
             this.livreDataGridView.Name = "livreDataGridView";
             this.livreDataGridView.RowHeadersWidth = 51;
             this.livreDataGridView.RowTemplate.Height = 24;
-            this.livreDataGridView.Size = new System.Drawing.Size(1055, 220);
+            this.livreDataGridView.Size = new System.Drawing.Size(804, 220);
             this.livreDataGridView.TabIndex = 3;
             // 
             // button5
@@ -121,9 +122,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(192, 700);
+            this.button5.Location = new System.Drawing.Point(914, 166);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(852, 40);
+            this.button5.Size = new System.Drawing.Size(177, 58);
             this.button5.TabIndex = 36;
             this.button5.Text = "Valider";
             this.button5.UseVisualStyleBackColor = false;
@@ -158,7 +159,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 415);
+            this.label3.Location = new System.Drawing.Point(68, 396);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 42;
@@ -166,14 +167,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(70, 437);
+            this.textBox2.Location = new System.Drawing.Point(70, 418);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 41;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(190, 436);
+            this.button2.Location = new System.Drawing.Point(190, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 40;
@@ -309,12 +310,20 @@
             // 
             this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(72, 691);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 43;
+            // 
             // Commande
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1248, 803);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
@@ -368,5 +377,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

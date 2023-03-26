@@ -1,4 +1,5 @@
 ﻿using Controllers2;
+using Models2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,20 +73,31 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            /*EmpruntADO em = new EmpruntADO();
-            Models2.Emprunt currentEmprunt = empruntBindingSource.Current as Models2.Etudiant;
+           EmpruntADO em = new EmpruntADO();
+            Models2.Etudiant currentEtudiant = etudiantBindingSource.Current as Models2.Etudiant;
+            Models2.Livre currentLivre = livreBindingSource.Current as Models2.Livre;
 
-            if (currentEtudiant != null && etud.Add_Etudiant(currentEtudiant))
+
+            int id_etud = currentEtudiant.Id_etudiant;
+            int id_livre = currentLivre.Id_livre;
+            DateTime now = DateTime.Now;
+            string formattedDate = now.ToString("yyyy-MM-dd");
+
+            DateTime date_retour = DateTime.Parse(dateTimePicker1.Text);
+            string retour_date = date_retour.ToString("yyyy-MM-dd");
+            Random random = new Random();
+            int id_emprunt = random.Next(0, 1001);
+            Emprunt emprunt = new Emprunt(id_emprunt,id_etud,id_livre,formattedDate,retour_date);
+            bool test = em.Add_Emprunt(emprunt);
+            if(test)
             {
-                List<Models2.Etudiant> etudiants = etud.Load_etudiants();
-                BindingList<Models2.Etudiant> bindingEtudiants = new BindingList<Models2.Etudiant>(etudiants);
-                etudiantBindingSource.DataSource = bindingEtudiants;
-                MessageBox.Show("Operation succeeded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Added with success");
             }
             else
             {
-                MessageBox.Show("Operation failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+                MessageBox.Show("Not Added ");
+            }
+
         }
     }
 }
