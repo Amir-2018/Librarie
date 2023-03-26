@@ -59,5 +59,21 @@ namespace Controllers2
                 return false;
 
         }
+
+        public bool delete_emprunt(int id)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
+            conn.Open();
+            string query = "Delete from Emprunts where id_emprunt = @id";
+            SqlCommand command = new SqlCommand(query, conn);
+            command.Parameters.AddWithValue("@id", id);
+            int rowAffected = command.ExecuteNonQuery();
+            if (rowAffected > 0)
+                return true;
+            else
+                return false;
+
+        }
+
     }
 }

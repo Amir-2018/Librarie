@@ -32,5 +32,29 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Models2.Emprunt currentEmprunt = (Models2.Emprunt)empruntBindingSource.Current;
+            EmpruntADO em = new EmpruntADO();
+            DialogResult result = MessageBox.Show("Are you sure you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                bool test = em.delete_emprunt(currentEmprunt.Id_emprunt);
+                if (test)
+                {
+                    EmpruntADO ems = new EmpruntADO();
+                    List<Models2.Emprunt> emprunts = ems.Load_emprunts();
+                    BindingList<Models2.Emprunt> bindingEmprunt = new BindingList<Models2.Emprunt>(emprunts);
+                    empruntBindingSource.DataSource = bindingEmprunt;
+                    MessageBox.Show("Deleted with success!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                    MessageBox.Show("Operation of delete failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

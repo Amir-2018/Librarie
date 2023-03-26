@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +57,7 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.etudiantDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.livreBindingSource)).BeginInit();
@@ -132,12 +133,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(192, 138);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(192, 127);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(108, 34);
             this.button1.TabIndex = 37;
             this.button1.Text = "chercher";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
@@ -174,13 +180,25 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(190, 417);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(190, 407);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(110, 33);
             this.button2.TabIndex = 40;
             this.button2.Text = "chercher";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(72, 691);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 43;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -310,12 +328,14 @@
             // 
             this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
             // 
-            // dateTimePicker1
+            // label4
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(72, 691);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 43;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(70, 672);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 16);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "Date de retour: ";
             // 
             // Commande
             // 
@@ -323,6 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1248, 803);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
@@ -378,5 +399,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
     }
 }
