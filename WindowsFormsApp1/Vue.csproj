@@ -181,9 +181,6 @@
     <None Include="Resources\profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ebook-cover.png" />
   </ItemGroup>
   <ItemGroup>

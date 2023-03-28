@@ -39,10 +39,67 @@ namespace WindowsFormsApp1
             int count2 = (int)command2.ExecuteScalar();
             label1.Text = count2.ToString();
 
+            // Liste des livre à rendre aujourd'hui 
+
+            string connectionString = "Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+
+            List<string> categories = new List<string>();
+
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("SELECT DISTINCT category FROM Livre", connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    categories.Add(reader["category"].ToString());
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            // Populate dataGridView1 with categories
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Add("Category", "Category");
+
+            foreach (string category in categories)
+            {
+                dataGridView1.Rows.Add(category);
+            }
+
+            // Populate DataGridView with categories
+            DataGridView dataGridView = new DataGridView();
+            dataGridView.AutoGenerateColumns = true;
+            dataGridView.DataSource = categories;
+
+            // Livres à rendre aujourd'hui
+
+     
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
