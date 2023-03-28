@@ -33,3 +33,4 @@ C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.xml
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\PdfSharp.Charting.xml
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\de\PdfSharp.resources.dll
 C:\Users\Amir\source\repos\View\WindowsFormsApp1\bin\Release\de\PdfSharp.Charting.resources.dll
+C:\Users\Amir\source\repos\View\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Reurn.resources

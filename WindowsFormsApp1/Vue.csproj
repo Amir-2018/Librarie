@@ -105,6 +105,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reurn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reurn.Designer.cs">
+      <DependentUpon>Reurn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Statistiques.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reurn.resx">
+      <DependentUpon>Reurn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Statistiques.resx">
       <DependentUpon>Statistiques.cs</DependentUpon>
     </EmbeddedResource>

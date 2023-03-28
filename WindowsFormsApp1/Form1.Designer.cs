@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,18 +38,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.etudiantBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.empruntBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empruntBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -61,6 +58,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 903);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.ebook_cover;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(59, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 65);
+            this.panel3.TabIndex = 5;
             // 
             // button5
             // 
@@ -177,22 +183,22 @@
             this.mainPanel.TabIndex = 2;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // etudiantBindingSource
+            // button6
             // 
-            this.etudiantBindingSource.DataSource = typeof(Models2.Etudiant);
-            // 
-            // empruntBindingSource
-            // 
-            this.empruntBindingSource.DataSource = typeof(Models2.Emprunt);
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.ebook_cover;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(59, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(62, 65);
-            this.panel3.TabIndex = 5;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 329);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(200, 40);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Alertes";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 
@@ -208,15 +214,11 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.etudiantBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empruntBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource etudiantBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button @new;
         private System.Windows.Forms.Panel panel1;
@@ -228,8 +230,8 @@
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.BindingSource empruntBindingSource;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button6;
     }
 }
 
