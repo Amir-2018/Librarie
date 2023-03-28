@@ -109,33 +109,31 @@ namespace Controllers2
 
         }
 
-        public List<Livre> Return_livres()
+        public List<Emprunt> Return_livres()
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
             conn.Open();
-            string query = "SELECT * FROM Livre WHERE date_retour = @today";
+            string query = "SELECT * FROM Emprunts WHERE date_retour = @today";
             SqlCommand command = new SqlCommand(query, conn);
             command.Parameters.AddWithValue("@today", DateTime.Today);
             SqlDataReader reader = command.ExecuteReader();
             // read data from the reader and insert it in datasource 
-            List<Livre> livres = new List<Livre>();
+            List<Emprunt> emps = new List<Emprunt>();
             while (reader.Read())
             {
+                int id_emprunt = int.Parse(reader["id_emprunt"].ToString());
+                int id_etudiant = int.Parse(reader["id_etudiant"].ToString());
                 int id_livre = int.Parse(reader["id_livre"].ToString());
-                string titre = reader["titre"].ToString();
-                string auteur = reader["auteur"].ToString();
-                int nbpages = int.Parse(reader["nbpages"].ToString());
-                int nbchapitre = int.Parse(reader["nbchapitre"].ToString());
-                DateTime date_edition = DateTime.Parse(reader["date_edition"].ToString());
-                float prix = float.Parse(reader["prix"].ToString());
-                string category = reader["category"].ToString();
+                string date_emprunt = reader["date_emprunt"].ToString();
+                string date_retour = reader["date_retour"].ToString();
 
-                Livre livreObject = new Livre(id_livre, titre, auteur, nbpages, nbchapitre, date_edition, prix, category);
-                livres.Add(livreObject);
+
+                Emprunt emruntObject = new Emprunt(id_emprunt,id_etudiant, id_livre, date_emprunt, date_retour);
+                emps.Add(emruntObject);
             }
             reader.Close();
             conn.Close();
-            return livres;
+            return emps;
         }
 
 
