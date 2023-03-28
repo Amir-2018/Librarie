@@ -107,5 +107,39 @@ namespace WindowsFormsApp1
        
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                EmpruntADO em = new EmpruntADO();
+                Models2.Etudiant currentEtudiant = etudiantBindingSource.Current as Models2.Etudiant;
+                Models2.Livre currentLivre = livreBindingSource.Current as Models2.Livre;
+
+
+                int id_etud = currentEtudiant.Id_etudiant;
+                int id_livre = currentLivre.Id_livre;
+                DateTime now = DateTime.Now;
+                string formattedDate = now.ToString("yyyy-MM-dd");
+
+                DateTime date_retour = DateTime.Parse(dateTimePicker1.Text);
+                string retour_date = date_retour.ToString("yyyy-MM-dd");
+                Random random = new Random();
+                int id_emprunt = random.Next(0, 1001);
+                Emprunt emprunt = new Emprunt(id_emprunt, id_etud, id_livre, formattedDate, retour_date);
+                bool test = em.Add_Emprunt(emprunt);
+                if (test)
+                {
+                    MessageBox.Show("Added with success");
+                }
+                else
+                {
+                    MessageBox.Show("Not Added ");
+                }
+            }
+
+        }
     }
 }
