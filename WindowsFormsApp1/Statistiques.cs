@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controllers2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,9 @@ namespace WindowsFormsApp1
             SqlCommand command2 = new SqlCommand(query2, conn);
             int count2 = (int)command2.ExecuteScalar();
             label1.Text = count2.ToString();
+            LivreADO lv = new LivreADO();
+            int count3 = lv.Count_emprunts();
+            label3.Text = count3.ToString();
 
             // Liste des livre à rendre aujourd'hui 
 

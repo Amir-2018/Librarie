@@ -135,7 +135,17 @@ namespace Controllers2
             conn.Close();
             return emps;
         }
-
+        public int Count_emprunts()
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-VPJMV81;Initial Catalog=Librairie;Integrated Security=True");
+            conn.Open();
+            string query = "SELECT COUNT(*) FROM Emprunts WHERE date_retour = @today";
+            SqlCommand command = new SqlCommand(query, conn);
+            command.Parameters.AddWithValue("@today", DateTime.Today);
+            int count = (int)command.ExecuteScalar();
+            conn.Close();
+            return count;
+        }
 
     }
 }

@@ -28,5 +28,10 @@ namespace WindowsFormsApp1
             // Bind the list of books to the DataGridView control
             dataGridView1.DataSource = livres;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
