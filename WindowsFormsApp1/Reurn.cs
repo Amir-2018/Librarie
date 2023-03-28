@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         {
             // Call the Load_livres method to retrieve the list of books with a return date equal to today's date
             LivreADO lv = new LivreADO(); 
-            List<Models2.Livre> livres = lv.Return_livres();
+            List<Models2.Emprunt> livres = lv.Return_livres();
 
             // Bind the list of books to the DataGridView control
             dataGridView1.DataSource = livres;
